@@ -112,7 +112,7 @@ def run(args):
 		indexfile.write(str(config.lists[list]['newindex']))
 		indexfile.close()
 
-if __name__ == '__main__':
+def main():
 	parser = argparse.ArgumentParser(description='mlmmj archive generator')
 	parser.add_argument('-c', '--config', default='/etc/mlmmj-archiver/config.yml', help='use alternate config file (default: %(default)s)')
 	parser.add_argument('-x', '--overwrite', action="store_const", const=True, help='overwrite archives')
