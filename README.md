@@ -3,7 +3,18 @@ mlmmj-archiver
 
 mlmmj-archiver is a wrapper around hypermail to manage the HTML archive generation of mlmmj-based mailing lists. It uses a YAML configuration file to describe the lists and their options.
 
-This script was created from Martin Leopold's update-archive.sh script. You can find the original version on his [webpage](http://www.leopold.dk/~martin/mlmmj-scripts.html).
+This script was inspired by Martin Leopold's update-archive.sh script. You can his version on his [webpage](http://www.leopold.dk/~martin/mlmmj-scripts.html).
+
+You can get support or request new features at the following [site](https://admin.modernbiztonsag.org/redmine/projects/mlmmj-archiver).
+
+Installation
+------------
+### Package ###
+    easy_install mlmmj_archiver
+    
+### Source ###
+Get it from [github](https://github.com/ScOut3R/mlmmj-archiver).
+
 
 Configuration syntax
 --------------------
