@@ -94,7 +94,14 @@ def run(args):
 	for list in config.lists.keys():
 
 		# Loop over the new messages according to the index files
-		for id in range(config.lists[list]['lastindex'], config.lists[list]['newindex']):
+		if config.lists[list]['lastindex'] == 1 and config.lists[list]['newindex'] == 1:
+			loop_start = 1
+			loop_end = 2
+		else:
+			loop_start = config.lists[list]['lastindex']
+			loop_end = config.lists[list]['newindex']
+		
+		for id in range(loop_start, loop_end):
 
 			# Call hypermail
 			os.system( ("env %s HM_DEFAULTINDEX=%s HM_THRDLEVELS=%i HM_FOLDER_BY_DATE='%%Y/%%m' hypermail -g -l %s -L %s -u -d %s %s < %s") % ( \
