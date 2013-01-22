@@ -99,7 +99,7 @@ def run(args):
 			loop_end = 2
 		else:
 			loop_start = config.lists[list]['lastindex']
-			loop_end = config.lists[list]['newindex']
+			loop_end = config.lists[list]['newindex'] + 1
 		
 		for id in range(loop_start, loop_end):
 
